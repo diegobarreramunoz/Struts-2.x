@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/struts/dtds/struts-2.dtd">
+
+<struts>
+    <package name="pacCliente" extends="struts-default">
+        <action name="agregarInicio" class="controlador.controlador" method="agregarInicio">
+            <result name="exito">/Vista/AgregarCliente.jsp</result>
+        </action>
+        <action name="listarInicio" class="controlador.controlador" method="listar">
+            <result name="fin">/Vista/ListarClientes.jsp</result>
+        </action>
+        <action name="agregarCliente" class="controlador.controlador" method="agregar">
+            <result name="fin">/Vista/AgregarClientes.jsp</result>
+        </action>
+    </package>
+</struts>
